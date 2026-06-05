@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<title>게시판</title>
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+
+    const loginState = sessionStorage.getItem("login");
+
+    if (loginState !== "true") {
+        alert("로그인 후 이용해주세요");
+        location.href = "login.html";
+    }
+
+})();
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">COMMUNITY</div>
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="analysis.html">분석</a>
+        <a href="login.html">로그인</a>
+    </nav>
+</header>
+
+<div class="community-container">
+
+    <h2>사용자 후기</h2>
+
+    <div class="post">
+        <img src="images/profile1.jpg">
+        <div>
+            <b>user1</b>
+            <p>Dr.G 좋아요</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="images/profile2.jpg">
+        <div>
+            <b>user2</b>
+            <p>독도 토너 순함</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="images/profile3.jpg">
+        <div>
+            <b>user3</b>
+            <p>비타C 효과 있음</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
