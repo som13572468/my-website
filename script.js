@@ -34,14 +34,14 @@ function login(){
 
     if(id === savedId && pw === savedPw){
 
-        // 🔥 핵심: 브라우저 닫으면 사라짐
+      
         sessionStorage.setItem("login", "true");
 
         alert("로그인 성공");
         location.href = "index.html";
 
     } else {
-        alert("아이디 또는 비밀번호 오류");
+        alert("아이디 또는 비밀번호 오류 회원가입을 하지 않았다면 우측상단 회원가입을 눌러주세요.");
     }
 }
 
